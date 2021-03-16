@@ -1,13 +1,4 @@
-$(function () {
-  $("#myForm").submit(handleFormSubmit);
-});
-
-function handleFormSubmit(e) {
-  alert("Form is being submitted");
-
-  e.preventDefault();
-}
-$().ready(function () {
+jQuery(document).ready(function ($) {
   $("#myForm").validate({
     rules: {
       name: {
