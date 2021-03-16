@@ -8,7 +8,7 @@ function handleFormSubmit(e) {
   e.preventDefault();
 }
 $().ready(function () {
-  $("#myForm'").validate({
+  $("#myForm").validate({
     rules: {
       name: {
         required: true,
