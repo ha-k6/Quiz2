@@ -1,1 +1,1 @@
-<?php include("./home-page.html");?>
+<?php include("./quiz2.html");?>
