@@ -8,15 +8,17 @@ function handleFormSubmit(e) {
   var c_password_script = $("#confirm_password").val();
   if (name_script.length < 5) {
     $("#name").after("<p>Enter name with more than 5 letters</p>");
-    $("name").addClass("error");
+    $("#name").addClass("error");
     e.preventDefault();
   }
   if (password_script.length < 8) {
     $("#password").after("<p>Enter password more than 8 letter</p>");
+    $("#password").addClass("error");
     e.preventDefault();
   }
   if (password_script != c_password_script) {
     $("#confirm_password").after("<p>Enter same password</p>");
+    $("#confirm_password").addClass("error");
     e.preventDefault();
   }
 }
