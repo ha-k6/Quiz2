@@ -4,7 +4,7 @@ $(function () {
 function handleFormSubmit(e) {
   alert("Form is being submitted");
   var name_script = $("#name").val();
-  var password_script = $("password").val();
+  var password_script = $("#password").val();
   var c_password_script = $("#confirm_password").val();
   if (name_script.lenght < 5) {
     $("#name").after("<p>Enter name with more than 5 letters</p>");
